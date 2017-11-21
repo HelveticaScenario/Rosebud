@@ -40,8 +40,6 @@ process.once('loaded', () => {
 	global.memcpy = rvm.memcpy.bind(rvm)
 	global.memset = rvm.memset.bind(rvm)
 	global.mod = mod
-	// const oldWrap = mod.wrap
-	global.getCartPath = () => path.resolve(__dirname, '../testCart')
 	global.rvm = rvm
 	// global.reload = () => {
 
